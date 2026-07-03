@@ -33,4 +33,16 @@ class Application
             return;
         }
     }
+    
+    public function showRegister()
+    {
+        //exibir o formulário de registro
+        echo '<form method="POST">';
+        echo '<input type="text" name="username" placeholder="Username" required>';
+        echo '<input type="email" name="email" placeholder="Email" required>';
+        echo '<input type="password" name="password" placeholder="Password" required>';
+        echo '<button type="submit">Register</button>';
+        echo '</form>';
+    }
+
 }
